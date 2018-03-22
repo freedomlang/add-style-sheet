@@ -1,3 +1,7 @@
+
+function wrapByDoubleQuotes (string) {
+    return '"' + string + '"';
+}
 /*
  * Add a stylesheet rule to the document
  * @param {Array} rules Accepts an array of JSON-encoded declarations
@@ -27,7 +31,7 @@ function addStylesheetRules (rules) {
 
         for (var pl = rule.length; j < pl; j++) {
             var prop = rule[j];
-            propStr += prop[0] + ':' + prop[1] + (prop[2] ? ' !important' : '') + ';\n';
+            propStr += prop[0] + ':' + (prop[0] === 'content' ? wrapByDoubleQuotes(prop[1]) : prop[1]) + (prop[2] ? ' !important' : '') + ';\n';
         }
 
         // Insert CSS Rule
