@@ -1,0 +1,22 @@
+{
+  "name": "add-style-sheet",
+  "version": "1.0.0",
+  "description": "This function's code is from MDN!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freedomlang/add-style-sheet.git"
+  },
+  "keywords": [
+    "stylesheet"
+  ],
+  "author": "freedomlang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freedomlang/add-style-sheet/issues"
+  },
+  "homepage": "https://github.com/freedomlang/add-style-sheet#readme"
+}
